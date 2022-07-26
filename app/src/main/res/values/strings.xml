@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">P4ConstraintLayout</string>
+    <string name="box_one">Box One</string>
+    <string name="boxTwoTxt">Box Two</string>
+    <string name="BoxThreeTxt">Box Three</string>
+    <string name="BoxFourTxt">Box Four</string>
+    <string name="BoxFiveTxt">Box Five</string>
+</resources>
