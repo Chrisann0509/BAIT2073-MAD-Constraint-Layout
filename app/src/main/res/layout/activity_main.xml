@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layout_marginBaseline="@dimen/marginWide"
     tools:context=".MainActivity">
 
     <TextView
@@ -37,11 +38,11 @@
         style="@style/WhiteBox"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/BoxFourTxt"
         android:layout_marginStart="@dimen/marginWide"
-        android:layout_marginEnd="@dimen/marginWide"
         android:layout_marginTop="@dimen/marginWide"
+        android:layout_marginEnd="@dimen/marginWide"
         android:layout_marginBottom="@dimen/marginWide"
+        android:text="@string/BoxFourTxt"
         app:layout_constraintBottom_toTopOf="@+id/boxFive"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/boxTwo"
@@ -72,5 +73,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/boxTwo"
         app:layout_constraintTop_toBottomOf="@+id/boxFour" />
+
+    <TextView
+        android:id="@+id/label_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/how_to_play"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/info_text"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/tap_the_boxes_and_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/label_text"
+        app:layout_constraintTop_toBottomOf="@+id/boxTwo"
+        app:layout_constraintVertical_bias="0.343" />
+
+    <!--Designtime attribute: applied only during the layout design, not at runtime.-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
